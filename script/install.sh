@@ -100,6 +100,7 @@ case "$CONDA_FORGE_YES" in
     ;;
 esac
 
+export MAMBA_ROOT_PREFIX=~/micromamba
 
 eval "$(micromamba shell hook --shell=bash)"
 
