@@ -101,9 +101,6 @@ case "$CONDA_FORGE_YES" in
 esac
 
 
-
-set -e
-
 eval "$(micromamba shell hook --shell=bash)"
 
 micromamba create --name svgrender python=3.10 --yes
