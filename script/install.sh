@@ -100,12 +100,9 @@ case "$CONDA_FORGE_YES" in
     ;;
 esac
 
-source ~/.bashrc
+
 
 set -e
-
-# Conda setup and environment creation
-eval "$(conda shell.bash hook)"
 
 micromamba create --name svgrender python=3.10 --yes
 micromamba activate svgrender
