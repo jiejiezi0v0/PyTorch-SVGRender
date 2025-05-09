@@ -104,7 +104,7 @@ esac
 
 set -e
 
-micromamba shell init --shell=bash --prefix=~/micromamba
+micromamba shell init --shell=bash
 eval "$(micromamba shell hook --shell=bash)"
 micromamba create --name svgrender python=3.10 --yes
 micromamba activate svgrender
