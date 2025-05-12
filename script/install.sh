@@ -23,6 +23,8 @@ pip install triton numba
 pip install numpy scipy scikit-fmm einops timm fairscale==0.4.13
 pip install accelerate transformers safetensors datasets
 pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
+pip install matplotlib_inline
+pip install --upgrade matplotlib
 pip install hydra-core --upgrade
 echo "The basic dependency library is installed."
 
