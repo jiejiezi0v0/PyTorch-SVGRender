@@ -16,25 +16,25 @@ micromamba install xformers -c xformers --yes
 echo "xformers installation is complete."
 
 # Install common Python dependencies
-micromamba install hydra-core omegaconf --yes
-micromamba install freetype-py shapely svgutils cairosvg --yes
-micromamba install opencv-python scikit-image matplotlib visdom wandb BeautifulSoup4 --yes
-micromamba install triton numba --yes
-micromamba install numpy scipy scikit-fmm einops timm fairscale==0.4.13 --yes
-micromamba install accelerate transformers safetensors datasets --yes
-micromamba install easydict scikit-learn pytorch_lightning==2.1.0 webdataset --yes
-micromamba install matplotlib_inline --yes
-micromamba install matplotlib --yes
-micromamba install hydra-core --yes
+uv pip install hydra-core omegaconf
+uv pip install freetype-py shapely svgutils cairosvg
+uv pip install opencv-python scikit-image matplotlib visdom wandb BeautifulSoup4
+uv pip install triton numba
+uv pip install numpy scipy scikit-fmm einops timm fairscale==0.4.13
+uv pip install accelerate transformers safetensors datasets
+uv pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
+uv pip install matplotlib_inline
+uv pip install matplotlib
+uv pip install hydra-core
 echo "The basic dependency library is installed."
 
 # Additional utility libraries
-pip install ftfy regex tqdm
-pip install git+https://github.com/openai/CLIP.git
+uv pip install ftfy regex tqdm
+uv pip install git+https://github.com/openai/CLIP.git
 echo "CLIP installation is complete."
 
 # Install diffusers
-pip install diffusers==0.20.2
+uv pip install diffusers==0.20.2
 echo "Diffusers installation is complete. version: 0.20.2"
 
 # Clone and set up DiffVG, handling dependencies on Ubuntu
@@ -49,7 +49,7 @@ sudo apt install -y cmake ffmpeg build-essential libjpeg-dev libpng-dev libtiff-
 
 micromamba install -y -c anaconda cmake
 micromamba install -y -c conda-forge ffmpeg
-pip install svgwrite svgpathtools cssutils torch-tools
+uv pip install svgwrite svgpathtools cssutils torch-tools
 
 # Install DiffVG
 python setup.py install
