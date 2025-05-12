@@ -16,16 +16,16 @@ micromamba install xformers -c xformers --yes
 echo "xformers installation is complete."
 
 # Install common Python dependencies
-pip install hydra-core omegaconf
-pip install freetype-py shapely svgutils cairosvg
-pip install opencv-python scikit-image matplotlib visdom wandb BeautifulSoup4
-pip install triton numba
-pip install numpy scipy scikit-fmm einops timm fairscale==0.4.13
-pip install accelerate transformers safetensors datasets
-pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
-pip install matplotlib_inline
-pip install --upgrade matplotlib
-pip install hydra-core --upgrade
+micromamba install hydra-core omegaconf --yes
+micromamba install freetype-py shapely svgutils cairosvg --yes
+micromamba install opencv-python scikit-image matplotlib visdom wandb BeautifulSoup4 --yes
+micromamba install triton numba --yes
+micromamba install numpy scipy scikit-fmm einops timm fairscale==0.4.13 --yes
+micromamba install accelerate transformers safetensors datasets --yes
+micromamba install easydict scikit-learn pytorch_lightning==2.1.0 webdataset --yes
+micromamba install matplotlib_inline --yes
+micromamba install matplotlib --yes
+micromamba install hydra-core --yes
 echo "The basic dependency library is installed."
 
 # Additional utility libraries
