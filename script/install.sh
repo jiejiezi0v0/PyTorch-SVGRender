@@ -26,6 +26,7 @@ uv pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
 uv pip install matplotlib_inline
 uv pip install matplotlib
 uv pip install hydra-core
+uv pip install huggingface_hub==0.25.2
 echo "The basic dependency library is installed."
 
 # Additional utility libraries
