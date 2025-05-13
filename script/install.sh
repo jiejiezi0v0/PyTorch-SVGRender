@@ -28,6 +28,7 @@ uv pip install matplotlib
 uv pip install hydra-core
 uv pip install transformers==4.37.2
 uv pip install huggingface_hub==0.25.2
+uv pip3 install ipython
 echo "The basic dependency library is installed."
 
 # Additional utility libraries
