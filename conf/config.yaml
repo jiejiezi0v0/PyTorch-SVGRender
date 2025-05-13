@@ -11,7 +11,7 @@ result_path: './workspace' # results output path
 # Accelerate config
 state:
   cpu: False   # use CPU (false means use GPU)
-  mprec: 'no'  # mixed precision, choices: 'no', 'fp16', 'bf16'
+  mprec: 'fp16'  # mixed precision, choices: 'no', 'fp16', 'bf16'
 #  wandb: False
 #  tensorboard: False
 
