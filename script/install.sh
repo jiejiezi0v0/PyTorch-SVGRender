@@ -28,7 +28,7 @@ uv pip install matplotlib
 uv pip install hydra-core
 uv pip install transformers==4.37.2
 uv pip install huggingface_hub==0.25.2
-uv pip3 install ipython
+uv pip install ipython
 pip uninstall torchvision -y
 pip install torchvision==0.13.1
 echo "The basic dependency library is installed."
