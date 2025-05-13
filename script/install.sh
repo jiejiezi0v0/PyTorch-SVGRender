@@ -11,6 +11,8 @@ echo "The conda environment was successfully created"
 micromamba install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch --yes
 echo "Pytorch installation is complete. version: 1.12.1"
 
+uv pip install huggingface_hub==0.25.2
+
 # Install xformers
 micromamba install xformers -c xformers --yes
 echo "xformers installation is complete."
@@ -26,7 +28,6 @@ uv pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
 uv pip install matplotlib_inline
 uv pip install matplotlib
 uv pip install hydra-core
-uv pip install huggingface_hub==0.25.2
 echo "The basic dependency library is installed."
 
 # Additional utility libraries
