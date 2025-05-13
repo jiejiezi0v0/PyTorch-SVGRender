@@ -20,7 +20,7 @@ uv pip install hydra-core omegaconf
 uv pip install freetype-py shapely svgutils cairosvg
 uv pip install opencv-python scikit-image matplotlib visdom wandb BeautifulSoup4
 uv pip install triton numba
-uv pip install numpy scipy scikit-fmm einops timm fairscale==0.4.13
+uv pip install scipy scikit-fmm einops timm fairscale==0.4.13
 uv pip install accelerate safetensors datasets
 uv pip install easydict scikit-learn pytorch_lightning==2.1.0 webdataset
 uv pip install matplotlib_inline
@@ -29,6 +29,7 @@ uv pip install hydra-core
 uv pip install transformers==4.37.2
 uv pip install huggingface_hub==0.25.2
 uv pip install ipython
+uv pip install numpy==1.26.0
 pip uninstall torchvision -y
 pip install torchvision==0.13.1
 echo "The basic dependency library is installed."
